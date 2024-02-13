@@ -150,6 +150,12 @@ def split_and_store_documents(index_urls: List[str], namespace: str) -> None:
 def main():
     news_urls = [
         "https://www.unap.cl/prontus_unap/site/tax/port/all/taxport_87_126__1.html",
+        "https://www.unap.cl/prontus_unap/site/tax/port/all/taxport_87_127__1.html",
+        "https://www.unap.cl/prontus_unap/site/tax/port/all/taxport_87_128__1.html",
+        "https://www.unap.cl/prontus_unap/site/tax/port/all/taxport_87_129__1.html",
+        "https://www.unap.cl/prontus_unap/site/tax/port/all/taxport_87_130__1.html",
+        "https://www.unap.cl/prontus_unap/site/tax/port/all/taxport_87_133__1.html",
+        "https://www.unap.cl/prontus_unap/site/tax/port/all/taxport_87_132__1.html",
     ]
 
     split_and_store_documents(index_urls=news_urls, namespace="Noticias")
