@@ -34,7 +34,7 @@ jobs:
 
       - name: Commit and push if it's necessary
         run: |
-            git config --local user.email "action@github.com"
-            git config --local user.name "GitHub Action"
+            git config --local user.email "alvarogutierrezmoraga@gmail.com"
+            git config --local user.name "agutierrezmorag"
             git add scraped_urls.json
             git diff --quiet && git diff --staged --quiet || (git commit -m 'Update scraped_urls.json'; git push)
