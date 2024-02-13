@@ -115,8 +115,13 @@ def split_and_store_documents(index_urls: List[str], namespace: str) -> None:
     Returns:
         None
     """
+    urls = get_article_urls(index_urls)
+    if not urls:
+        cprint("No se encontraron nuevas URLs para procesar", "yellow")
+        return
+
     loader = NewsURLLoader(
-        urls=get_article_urls(index_urls),
+        urls=urls,
         text_mode=True,
         show_progress_bar=True,
         nlp=True,
